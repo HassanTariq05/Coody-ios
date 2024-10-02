@@ -7,18 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B724EA4B2CAAF84900BAAF6B /* OTPInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */; };
+		B796FC072CAC8010003F15CD /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */; };
+		B796FC092CAC8541003F15CD /* EnableLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FC082CAC8541003F15CD /* EnableLocationView.swift */; };
 		B797039D2CA00A64006CFD96 /* Coody_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797039C2CA00A64006CFD96 /* Coody_IOSApp.swift */; };
-		B797039F2CA00A64006CFD96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797039E2CA00A64006CFD96 /* ContentView.swift */; };
 		B79703A12CA00A68006CFD96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79703A02CA00A68006CFD96 /* Assets.xcassets */; };
 		B79703A42CA00A68006CFD96 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79703A32CA00A68006CFD96 /* Preview Assets.xcassets */; };
+		B79703AC2CA02105006CFD96 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79703AB2CA02105006CFD96 /* IntroView.swift */; };
+		B7A542B32CA8835A00FFBCC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A542B22CA8835A00FFBCC7 /* ContentView.swift */; };
+		B7A542B52CA8843400FFBCC7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A542B42CA8843400FFBCC7 /* SplashView.swift */; };
+		B7C3FE032CAD8B2500ECE517 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE022CAD8B2500ECE517 /* HomeView.swift */; };
+		B7E992342CA1975B0032DA86 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E992332CA1975B0032DA86 /* LoginView.swift */; };
+		B7E992362CA1E73B0032DA86 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E992352CA1E73B0032DA86 /* SignupView.swift */; };
+		B7E992382CA1E9270032DA86 /* PhoneNumberConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E992372CA1E9270032DA86 /* PhoneNumberConfirmationView.swift */; };
+		B7E9923A2CA325070032DA86 /* OTPAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E992392CA325060032DA86 /* OTPAuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInputField.swift; sourceTree = "<group>"; };
+		B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B796FC082CAC8541003F15CD /* EnableLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationView.swift; sourceTree = "<group>"; };
 		B79703992CA00A64006CFD96 /* Coody-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coody-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B797039C2CA00A64006CFD96 /* Coody_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coody_IOSApp.swift; sourceTree = "<group>"; };
-		B797039E2CA00A64006CFD96 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B79703A02CA00A68006CFD96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B79703A32CA00A68006CFD96 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B79703AB2CA02105006CFD96 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		B7A542B22CA8835A00FFBCC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7A542B42CA8843400FFBCC7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		B7C3FE022CAD8B2500ECE517 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B7E992332CA1975B0032DA86 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B7E992352CA1E73B0032DA86 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		B7E992372CA1E9270032DA86 /* PhoneNumberConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberConfirmationView.swift; sourceTree = "<group>"; };
+		B7E992392CA325060032DA86 /* OTPAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPAuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +72,19 @@
 			isa = PBXGroup;
 			children = (
 				B797039C2CA00A64006CFD96 /* Coody_IOSApp.swift */,
-				B797039E2CA00A64006CFD96 /* ContentView.swift */,
 				B79703A02CA00A68006CFD96 /* Assets.xcassets */,
 				B79703A22CA00A68006CFD96 /* Preview Content */,
+				B79703AB2CA02105006CFD96 /* IntroView.swift */,
+				B7E992332CA1975B0032DA86 /* LoginView.swift */,
+				B7E992352CA1E73B0032DA86 /* SignupView.swift */,
+				B7E992372CA1E9270032DA86 /* PhoneNumberConfirmationView.swift */,
+				B7E992392CA325060032DA86 /* OTPAuthView.swift */,
+				B7A542B22CA8835A00FFBCC7 /* ContentView.swift */,
+				B7A542B42CA8843400FFBCC7 /* SplashView.swift */,
+				B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */,
+				B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */,
+				B796FC082CAC8541003F15CD /* EnableLocationView.swift */,
+				B7C3FE022CAD8B2500ECE517 /* HomeView.swift */,
 			);
 			path = "Coody-IOS";
 			sourceTree = "<group>";
@@ -137,8 +167,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B797039F2CA00A64006CFD96 /* ContentView.swift in Sources */,
+				B7E992342CA1975B0032DA86 /* LoginView.swift in Sources */,
+				B7A542B32CA8835A00FFBCC7 /* ContentView.swift in Sources */,
 				B797039D2CA00A64006CFD96 /* Coody_IOSApp.swift in Sources */,
+				B7E992362CA1E73B0032DA86 /* SignupView.swift in Sources */,
+				B796FC092CAC8541003F15CD /* EnableLocationView.swift in Sources */,
+				B79703AC2CA02105006CFD96 /* IntroView.swift in Sources */,
+				B7E992382CA1E9270032DA86 /* PhoneNumberConfirmationView.swift in Sources */,
+				B7E9923A2CA325070032DA86 /* OTPAuthView.swift in Sources */,
+				B7A542B52CA8843400FFBCC7 /* SplashView.swift in Sources */,
+				B7C3FE032CAD8B2500ECE517 /* HomeView.swift in Sources */,
+				B796FC072CAC8010003F15CD /* ForgotPasswordView.swift in Sources */,
+				B724EA4B2CAAF84900BAAF6B /* OTPInputField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,17 +309,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coody-IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = N4X88WK7XV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coody-IOS/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = App;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +342,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Coody-IOS/Preview Content\"";
 				DEVELOPMENT_TEAM = N4X88WK7XV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coody-IOS/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = App;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

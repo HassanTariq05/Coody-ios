@@ -11,7 +11,13 @@ import SwiftUI
 struct Coody_IOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Color.white
+                .ignoresSafeArea()
+                .overlay(
+                    ZStack {
+                        ContentView()
+                    }
+                )
         }
     }
 }

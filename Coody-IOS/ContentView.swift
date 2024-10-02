@@ -2,20 +2,35 @@
 //  ContentView.swift
 //  Coody-IOS
 //
-//  Created by Hassan Tariq on 22/09/2024.
+//  Created by Hassan Tariq on 28/09/2024.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isActive: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Color.white
+            .ignoresSafeArea()
+            .overlay(
+                ZStack {
+                    if self.isActive {
+                        IntroView()
+                    } else {
+                        SplashView()
+                    }
+                }
+                .onAppear {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        withAnimation {
+                            self.isActive = true
+                        }
+                    }
+                }
+                
+            )
     }
 }
 
