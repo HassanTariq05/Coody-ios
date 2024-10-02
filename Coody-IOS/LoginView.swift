@@ -130,7 +130,7 @@ struct CustomTextField: View {
 }
 
 struct CustomButton: View {
-    var title: String
+    var title: String?
     var action: (() -> Void)?
     var backgroundColor: Color
     var foregroundColor: Color
@@ -149,10 +149,12 @@ struct CustomButton: View {
                         .scaledToFit()
                         .foregroundColor(Color.white)
                 }
-                Text(title)
-                    .foregroundColor(foregroundColor)
+                if let title = title {
+                    Text(title)
+                        .foregroundColor(foregroundColor)
+                }
             }
-            .frame(minWidth: 100, maxWidth: .infinity)
+            .frame(maxWidth: .infinity)
             .padding()
             .frame(height: 50)
             .background(backgroundColor)
