@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B724EA4B2CAAF84900BAAF6B /* OTPInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */; };
+		B743D2F62CAFA19C00BB7827 /* RecommendedProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */; };
+		B743D2F82CB020F300BB7827 /* HomeTabsProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */; };
 		B796FC072CAC8010003F15CD /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */; };
 		B796FC092CAC8541003F15CD /* EnableLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FC082CAC8541003F15CD /* EnableLocationView.swift */; };
 		B797039D2CA00A64006CFD96 /* Coody_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B797039C2CA00A64006CFD96 /* Coody_IOSApp.swift */; };
@@ -17,7 +19,7 @@
 		B7A542B32CA8835A00FFBCC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A542B22CA8835A00FFBCC7 /* ContentView.swift */; };
 		B7A542B52CA8843400FFBCC7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A542B42CA8843400FFBCC7 /* SplashView.swift */; };
 		B7C3FE032CAD8B2500ECE517 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE022CAD8B2500ECE517 /* HomeView.swift */; };
-		B7C3FE052CADBF5100ECE517 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE042CADBF5100ECE517 /* ProductView.swift */; };
+		B7C3FE052CADBF5100ECE517 /* PopularProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE042CADBF5100ECE517 /* PopularProductView.swift */; };
 		B7C3FE072CADD01F00ECE517 /* ProductCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE062CADD01F00ECE517 /* ProductCategoryView.swift */; };
 		B7C3FE092CADDA2800ECE517 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C3FE082CADDA2800ECE517 /* TabViews.swift */; };
 		B7E992342CA1975B0032DA86 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E992332CA1975B0032DA86 /* LoginView.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInputField.swift; sourceTree = "<group>"; };
+		B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedProductView.swift; sourceTree = "<group>"; };
+		B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabsProductView.swift; sourceTree = "<group>"; };
 		B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		B796FC082CAC8541003F15CD /* EnableLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationView.swift; sourceTree = "<group>"; };
 		B79703992CA00A64006CFD96 /* Coody-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coody-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,7 +42,7 @@
 		B7A542B22CA8835A00FFBCC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7A542B42CA8843400FFBCC7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		B7C3FE022CAD8B2500ECE517 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		B7C3FE042CADBF5100ECE517 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		B7C3FE042CADBF5100ECE517 /* PopularProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularProductView.swift; sourceTree = "<group>"; };
 		B7C3FE062CADD01F00ECE517 /* ProductCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoryView.swift; sourceTree = "<group>"; };
 		B7C3FE082CADDA2800ECE517 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		B7E992332CA1975B0032DA86 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -91,9 +95,11 @@
 				B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */,
 				B796FC082CAC8541003F15CD /* EnableLocationView.swift */,
 				B7C3FE022CAD8B2500ECE517 /* HomeView.swift */,
-				B7C3FE042CADBF5100ECE517 /* ProductView.swift */,
+				B7C3FE042CADBF5100ECE517 /* PopularProductView.swift */,
 				B7C3FE062CADD01F00ECE517 /* ProductCategoryView.swift */,
 				B7C3FE082CADDA2800ECE517 /* TabViews.swift */,
+				B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */,
+				B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */,
 			);
 			path = "Coody-IOS";
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 				B7E992362CA1E73B0032DA86 /* SignupView.swift in Sources */,
 				B7C3FE072CADD01F00ECE517 /* ProductCategoryView.swift in Sources */,
 				B796FC092CAC8541003F15CD /* EnableLocationView.swift in Sources */,
-				B7C3FE052CADBF5100ECE517 /* ProductView.swift in Sources */,
+				B743D2F62CAFA19C00BB7827 /* RecommendedProductView.swift in Sources */,
+				B7C3FE052CADBF5100ECE517 /* PopularProductView.swift in Sources */,
+				B743D2F82CB020F300BB7827 /* HomeTabsProductView.swift in Sources */,
 				B79703AC2CA02105006CFD96 /* IntroView.swift in Sources */,
 				B7E992382CA1E9270032DA86 /* PhoneNumberConfirmationView.swift in Sources */,
 				B7E9923A2CA325070032DA86 /* OTPAuthView.swift in Sources */,

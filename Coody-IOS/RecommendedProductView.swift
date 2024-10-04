@@ -1,13 +1,13 @@
 //
-//  ProductView.swift
+//  RecommendedProductView.swift
 //  Coody-IOS
 //
-//  Created by Hassan Tariq on 02/10/2024.
+//  Created by Hassan Tariq on 04/10/2024.
 //
 
 import SwiftUI
 
-struct ProductView: View {
+struct RecommendedProductView: View {
     var image: String
     var title: String
     var desc: String
@@ -19,8 +19,7 @@ struct ProductView: View {
             Image(image)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 230, height: 156)
-                .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1))
+                .frame(width: 142, height: 116)
             Spacer()
             HStack {
                 VStack(spacing: 3) {
@@ -77,12 +76,12 @@ struct ProductView: View {
             
         }
         .padding()
-        .frame(width: 253, height: 245)
-        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 1))
+        .frame(width: 157, height: 196)
+        .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color("grayOutlineColor"), lineWidth: 1))
         
     }
 }
 
 #Preview {
-    ProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
+    RecommendedProductView(image: "VegSalad", title: "Veg Salad", desc: "Western Cuisine", price: "150", rating: "4.5")
 }

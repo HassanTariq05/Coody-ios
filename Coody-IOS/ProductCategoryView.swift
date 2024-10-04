@@ -22,8 +22,8 @@ struct ProductCategoryView: View {
             .padding(.all, 8)
             .background(Color.white)
             .cornerRadius(6)
-            .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.white, lineWidth: 1))
-            .shadow(radius: 4, x: 0, y: 3)
+            .overlay(RoundedRectangle(cornerRadius: 6).stroke(Color.white, lineWidth: 0.5))
+            .shadow(radius: 3, x: 0, y: 3)
             
             Text(name)
                 .font(.custom("Inter", size: 14))

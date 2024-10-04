@@ -9,8 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     @State var searchFeildText: String
+    @State private var selectedTab: String = "Featured"
+    
     var body: some View {
-        ScrollView(.vertical) {
+        ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 15) {
                 HStack {
                     VStack(alignment: .leading, spacing: 10) {
@@ -50,7 +52,8 @@ struct HomeView: View {
                     .frame(width: .infinity, height: 51)
                     .background(.white)
                     .clipShape(RoundedRectangle(cornerRadius: 8, style: .circular))
-                    .shadow(radius: 8)
+                    .shadow(radius: 1)
+                    .tint(.red)
                     
                     CustomButton(title: nil, backgroundColor: .red, foregroundColor: .white,icon: "line.3.horizontal.decrease")
                         .frame(width: 54, height: 51)
@@ -64,17 +67,18 @@ struct HomeView: View {
                         Spacer()
                     }
                     
-                    ScrollView(.horizontal)  {
+                    ScrollView(.horizontal, showsIndicators: false)  {
                         HStack(spacing: 25) {
-                            ProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
-                            ProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
+                            PopularProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
+                            PopularProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
                         }
                         .padding(.all, 2)
                     }
                     
                     
                 }
-                ScrollView(.horizontal)  {
+                .padding(.top, 5)
+                ScrollView(.horizontal, showsIndicators: false)  {
                     HStack(spacing: 15) {
                         ProductCategoryView(image: "pizzaCat", name: "Pizza")
                         ProductCategoryView(image: "burgerCat", name: "Burger")
@@ -95,20 +99,72 @@ struct HomeView: View {
                         Spacer()
                     }
                     
-                    ScrollView(.horizontal)  {
-                        HStack(spacing: 25) {
-                            ProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
-                            ProductView(image: "drumsteak", title: "Drumsteak Thai Ha", desc: "Western Cuisine, Fast Food", price: "$250", rating: "4.2")
+                    ScrollView(.horizontal, showsIndicators: false)  {
+                        HStack(spacing: 15) {
+                            RecommendedProductView(image: "VegSalad", title: "Veg Salad", desc: "Western Cuisine", price: "150", rating: "4.2")
+                            
+                            RecommendedProductView(image: "asianGlazed", title: "Veg Salad", desc: "Western Cuisine", price: "150", rating: "4.1")
+                            
+                            RecommendedProductView(image: "VegSalad", title: "Veg Salad", desc: "Western Cuisine", price: "150", rating: "4.3")
                         }
                         .padding(.all, 2)
                     }
                     
                     
                 }
+                
+                HStack() {
+                    TabButton(isSelected: selectedTab == "Featured", name: "Featured", action: {
+                        selectedTab = "Featured"
+                    })
+                    Spacer()
+                    TabButton(isSelected: selectedTab == "Popular", name: "Popular", action: {
+                        selectedTab = "Popular"
+                    })
+                    Spacer()
+                    TabButton(isSelected: selectedTab == "Newest", name: "Newest", action: {
+                        selectedTab = "Newest"
+                    })
+                    Spacer()
+                    TabButton(isSelected: selectedTab == "Trending", name: "Trending", action: {
+                        selectedTab = "Trending"
+                    })
+                }
+                
+                VStack(spacing: 10) {
+                    HomeTabsProductView(image: "ChickenBurger", title: "Chicken Burger", desc: "Western Cuisine", price: "$120", rating: "4.1")
+                    HomeTabsProductView(image: "ChickenBurger", title: "Chicken Burger", desc: "Western Cuisine", price: "$120", rating: "4.1")
+                    HomeTabsProductView(image: "ChickenBurger", title: "Chicken Burger", desc: "Western Cuisine", price: "$120", rating: "4.1")
+                }
                 Spacer()
             }
             .padding()
         }
+    }
+}
+
+struct TabButton: View {
+    var isSelected: Bool
+    var name: String
+    var action: (() -> Void)?
+    
+    var body: some View {
+        VStack {
+            Button(action: {
+                (action ?? {})()
+            }) {
+                Text(name)
+                    .font(.custom("Inter", size: 18))
+                    .foregroundStyle(isSelected ? .red : .black)
+            }
+            if isSelected {
+                Divider()
+                    .overlay(.red)
+                    .frame(width: 80)
+            }
+            
+        }
+        
     }
 }
 
