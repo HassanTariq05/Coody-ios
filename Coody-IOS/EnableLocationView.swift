@@ -35,9 +35,14 @@ struct EnableLocationView: View {
             
             CustomButton(title: "Use current location", backgroundColor: .red, foregroundColor: .white, icon: "location")
             
-            Text("Skip for now")
-                .foregroundStyle(.gray)
-                .font(.custom("Roboto", size: 16))
+            NavigationLink(destination: TabViews()) {
+                Button(action: {}) {
+                    Text("Skip for now")
+                        .foregroundStyle(.gray)
+                        .font(.custom("Roboto", size: 16))
+                }
+                .allowsHitTesting(false)
+            }
         }
         .padding()
     }

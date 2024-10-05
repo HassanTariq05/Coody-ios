@@ -51,18 +51,23 @@ struct LoginView: View {
                 
                 HStack {
                     Spacer()
-                    Text("Forgot Password?")
-                        .font(.custom("Inter", size: 14))
-                        .fontWeight(.medium)
-                        .foregroundColor(.black)
+                    NavigationLink(destination: ForgotPasswordView(text: "")) {
+                        Button(action: {}) {
+                            Text("Forgot Password?")
+                                .font(.custom("Inter", size: 14))
+                                .fontWeight(.medium)
+                                .foregroundColor(.black)
+                        }
+                        .allowsHitTesting(false)
+                    }
+                    
                 }
                 
                 VStack(spacing: 25) {
                     VStack(spacing: 15) {
-                        NavigationLink(destination: OTPAuthView()) {
+                        NavigationLink(destination: EnableLocationView()) {
                             CustomButton(
                                 title: "Sign In",
-                                action: nil,
                                 backgroundColor: .red,
                                 foregroundColor: .white
                             )
@@ -117,6 +122,7 @@ struct CustomTextField: View {
                     TextField(placeholder, text: $text)
                         .padding()
                         .keyboardType(keyboardType)
+                        .tint(.red)
                 }
                 if let icon = icon {
                     Image(systemName: icon)

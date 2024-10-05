@@ -12,29 +12,43 @@ struct TabViews: View {
         TabView {
             HomeView(searchFeildText: "")
                 .tabItem {
-                    Image(systemName: "house")
+                    VStack {
+                        Image(systemName: "house")
+                            .padding(.top, 10) // Apply top padding here
+                    }
                 }
             IntroView()
                 .tabItem {
-                    Image(systemName: "heart")
+                    VStack {
+                        Image(systemName: "heart")
+                            .padding(.top, 10)
+                    }
                 }
             IntroView()
                 .tabItem {
-                    Image(systemName: "bag")
+                    VStack {
+                        Image(systemName: "bag")
+                            .padding(.top, 10)
+                    }
                 }
             IntroView()
                 .tabItem {
-                    Image(systemName: "bell")
+                    VStack {
+                        Image(systemName: "bell")
+                            .padding(.top, 10)
+                    }
                 }
         }
         .tint(.red)
-                .onAppear(perform: {
-                    UITabBar.appearance().unselectedItemTintColor = .darkGray
-                    UITabBar.appearance().backgroundColor = .systemGray4.withAlphaComponent(0.4)
-                })
+        .onAppear(perform: {
+            UITabBar.appearance().unselectedItemTintColor = .darkGray
+            UITabBar.appearance().backgroundColor = .systemGray4.withAlphaComponent(0.1)
+        })
+        .toolbar(.hidden, for: .navigationBar)
     }
 }
 
 #Preview {
     TabViews()
 }
+

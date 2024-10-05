@@ -39,9 +39,9 @@ struct ForgotPasswordView: View {
             CustomTextField(label: "Phone Number", text: $text, placeholder: "",keyboardType: .numberPad, icon: "phone.fill")
             
             Spacer()
-            CustomButton(title: "Next", action: {
-                print("next pressed")
-            }, backgroundColor: .red, foregroundColor: .white, borderColor: .red)
+            NavigationLink(destination: PhoneNumberConfirmationView(phoneNumber: text)) {
+                CustomButton(title: "Next", backgroundColor: .red, foregroundColor: .white, borderColor: .red)
+            }
         }
         .padding()
     }

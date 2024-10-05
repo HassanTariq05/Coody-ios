@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B724EA4B2CAAF84900BAAF6B /* OTPInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */; };
+		B72556AA2CB1791900A267EC /* RecentSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72556A92CB1791900A267EC /* RecentSearchesView.swift */; };
+		B72556AC2CB1BA4200A267EC /* SearchByFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72556AB2CB1BA4200A267EC /* SearchByFilterView.swift */; };
+		B72556AE2CB1CCA800A267EC /* SlideOverCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72556AD2CB1CCA800A267EC /* SlideOverCard.swift */; };
 		B743D2F62CAFA19C00BB7827 /* RecommendedProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */; };
 		B743D2F82CB020F300BB7827 /* HomeTabsProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */; };
 		B796FC072CAC8010003F15CD /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		B724EA4A2CAAF84900BAAF6B /* OTPInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPInputField.swift; sourceTree = "<group>"; };
+		B72556A92CB1791900A267EC /* RecentSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesView.swift; sourceTree = "<group>"; };
+		B72556AB2CB1BA4200A267EC /* SearchByFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByFilterView.swift; sourceTree = "<group>"; };
+		B72556AD2CB1CCA800A267EC /* SlideOverCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideOverCard.swift; sourceTree = "<group>"; };
 		B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedProductView.swift; sourceTree = "<group>"; };
 		B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabsProductView.swift; sourceTree = "<group>"; };
 		B796FC062CAC8010003F15CD /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -100,6 +106,9 @@
 				B7C3FE082CADDA2800ECE517 /* TabViews.swift */,
 				B743D2F52CAFA19C00BB7827 /* RecommendedProductView.swift */,
 				B743D2F72CB020F300BB7827 /* HomeTabsProductView.swift */,
+				B72556A92CB1791900A267EC /* RecentSearchesView.swift */,
+				B72556AB2CB1BA4200A267EC /* SearchByFilterView.swift */,
+				B72556AD2CB1CCA800A267EC /* SlideOverCard.swift */,
 			);
 			path = "Coody-IOS";
 			sourceTree = "<group>";
@@ -183,12 +192,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E992342CA1975B0032DA86 /* LoginView.swift in Sources */,
+				B72556AA2CB1791900A267EC /* RecentSearchesView.swift in Sources */,
+				B72556AC2CB1BA4200A267EC /* SearchByFilterView.swift in Sources */,
 				B7A542B32CA8835A00FFBCC7 /* ContentView.swift in Sources */,
 				B797039D2CA00A64006CFD96 /* Coody_IOSApp.swift in Sources */,
 				B7E992362CA1E73B0032DA86 /* SignupView.swift in Sources */,
 				B7C3FE072CADD01F00ECE517 /* ProductCategoryView.swift in Sources */,
 				B796FC092CAC8541003F15CD /* EnableLocationView.swift in Sources */,
 				B743D2F62CAFA19C00BB7827 /* RecommendedProductView.swift in Sources */,
+				B72556AE2CB1CCA800A267EC /* SlideOverCard.swift in Sources */,
 				B7C3FE052CADBF5100ECE517 /* PopularProductView.swift in Sources */,
 				B743D2F82CB020F300BB7827 /* HomeTabsProductView.swift in Sources */,
 				B79703AC2CA02105006CFD96 /* IntroView.swift in Sources */,

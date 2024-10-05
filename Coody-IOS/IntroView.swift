@@ -6,8 +6,6 @@ struct IntroView: View {
             BaseIntroView(image: "manHoldingPhone", textBlack: "Search Your", textRed: "Favorite Food", tagline: "Discover the foods from over all nearby restaurants", nextIcon: "nextIcon", destination: SecondIntroView())
                 
         }
-//        .toolbarTitleMenu(content: "")
-        
     }
 }
 

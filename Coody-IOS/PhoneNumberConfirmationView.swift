@@ -35,18 +35,21 @@ struct PhoneNumberConfirmationView: View {
                         .multilineTextAlignment(.center)
                     
                     HStack {
-                        CustomButton(
-                            title: "Cancel",
-                            action: { print("Sign In") },
-                            backgroundColor: .white,
-                            foregroundColor: .black
-                        )
-                        CustomButton(
-                            title: "Next",
-                            action: { print("Sign In") },
-                            backgroundColor: .red,
-                            foregroundColor: .white
-                        )
+                        NavigationLink(destination: ForgotPasswordView(text: phoneNumber)) {
+                            CustomButton(
+                                title: "Cancel",
+                                backgroundColor: .white,
+                                foregroundColor: .black
+                            )
+                        }
+                        
+                        NavigationLink(destination: OTPAuthView()) {
+                            CustomButton(
+                                title: "Next",
+                                backgroundColor: .red,
+                                foregroundColor: .white
+                            )
+                        }
                     }
                     .padding()
                     
